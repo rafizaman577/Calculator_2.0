@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+#calculator{
+    background-color: rgb(23, 29, 34);
+    overflow: hidden;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px #000;
+}
+
+#branding{
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    color:#fff;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(15, 20, 24);
+    color: #c0c0c0;
+    padding: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: black 0 0 10px 0;
+    z-index: 2;
+    cursor:default;
+}
+
+.main{
+    
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+#display{
+    overflow: scroll;
+    width: 252px;
+    border: none;
+    outline:none;
+    padding: 1rem;
+    font-size: 2.5rem;
+    margin: 7px 0 5px 0;
+    background:linear-gradient(#ffffff,rgb(179, 179, 175));
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 1px 1px 2px #333 inset;
+    cursor: default;
+    text-align: right;
+}
+#display.hover{
+    border:none;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:7px;
+}
+
+#plus{
+    grid-row: 2 / 4;
+    grid-column: 4 / 5;
+}
+
+#equal{
+    grid-row: 4 / 6;
+    grid-column: 4 / 5;
+}
+
+#zero{
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
+}
+
+button{
+    padding: 10px 0px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2rem;
+    background:linear-gradient(rgb(26, 32, 37),rgb(13, 16, 19));
+    color: rgb(30, 190, 240);
+    box-shadow: 2px 3px 2px black, -1px 0px 2px black, 
+    1px 1.5px 1px rgba(255, 255, 255, 0.103) inset;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calculator .main .buttons button.blue:hover{
+    /* background:linear-gradient(rgb(31, 38, 44),rgb(18, 22, 27)); */
+    text-shadow: 0 0 15px rgb(30, 190, 240);
+    box-shadow: 0 0 5px rgb(30, 190, 240) inset;
+}
+
+#calculator .main .buttons button.orange:hover{
+    /* background:linear-gradient(rgb(31, 38, 44),rgb(18, 22, 27)); */
+    text-shadow: 0 0 15px rgb(168, 90, 86);
+    box-shadow: 0 0 5px rgb(168, 90, 86) inset;
+}
+
+.buttons .orange{
+    color: rgb(168, 90, 86);
+}
